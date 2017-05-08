@@ -1,0 +1,58 @@
+{
+  "pages": [
+     "pages/audio/audio",
+    "pages/index/index",
+    "pages/news/news",
+    "pages/video/video",
+   
+    "pages/audioDetail/audioDetail",
+    "pages/movie/moive",
+    "pages/movieDetail/movieDetail",
+    "pages/novel/novel",
+    "pages/my/my",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#cabcb1",
+    "navigationBarTitleText": "大瑶哥",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#2aa515",
+    "backgroundColor": "#f3f3f3",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./public/image/icon/home.png",
+        "selectedIconPath": "./public/image/icon/home_selected.png"
+      },
+      {
+        "pagePath": "pages/audio/audio",
+        "text": "音乐",
+        "iconPath": "./public/image/icon/audio.png",
+        "selectedIconPath": "./public/image/icon/audio_selected.png"
+      },
+      {
+        "pagePath": "pages/novel/novel",
+        "text": "小说",
+        "iconPath": "./public/image/icon/video.png",
+        "selectedIconPath": "./public/image/icon/video_selected.png"
+      },
+      {
+        "pagePath": "pages/movie/moive",
+        "text": "电影",
+        "iconPath": "./public/image/icon/movie.png",
+        "selectedIconPath": "./public/image/icon/movie_selected.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "./public/image/icon/my.png",
+        "selectedIconPath": "./public/image/icon/my_selected.png"
+      }
+    ]
+  }
+}

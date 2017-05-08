@@ -1,0 +1,42 @@
+<audio 
+poster="{{music.poster}}"
+ name="{{music.name}}" 
+ author="{{music.author}}" 
+ src="{{music.src}}" 
+ id="myAudio"
+  controls 
+  bindended="endedHandle"
+   bindtimeupdate="pro"
+  ></audio>
+  <view class="musicText">{{musicText}}</view>
+ <progress class="pro" activeColor="#09BB07" percent="{{percent}}" show-info />
+  <view class="btn-list">
+   
+    <button class="btn" type="primary" bindtap="audioPlay">播放</button>
+    <button class="btn" type="primary" bindtap="audiolast">上一首</button>
+    
+    <button class="btn" type="primary" bindtap="audioPause">暂停</button>
+    <button class="btn" type="primary" bindtap="audionext">下一首</button>
+<button class="btn" type="primary" bindtap="audioStart">重播</button>
+
+</view>
+<!--
+
+
+
+-->
+<scroll-view  scroll-y="false" style="height: {{scrollHeight}}px">
+    <view wx:for="{{musicList}}"
+     wx:for-item="music" 
+     wx:for-index="idx"    
+     wx:key="{{idx}}"
+     class="music">
+        <view class="musicPoster list">
+            <image src="{{music.poster}}" data-idx="{{idx}}" bindtap="playMusic"></image>
+        </view>
+        <view class="list">
+        <view class="musicName l-music">{{music.name}}</view>
+        <view class="musicAuthor l-music">{{music.author}}</view>
+        </view>
+     </view>
+</scroll-view>

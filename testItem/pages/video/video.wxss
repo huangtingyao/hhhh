@@ -1,0 +1,61 @@
+/* pages/video/video.wxss */
+.btn-area button{
+   font-size: 12px;
+   font-weight:500;
+   background-color:lightblue;
+   color:#666;
+}
+.btn-area input{
+    padding:10px;
+    
+}
+.video{
+    width:100%;
+}
+.list{
+  font-size: 12px;
+  line-height: 24px;
+  padding:5px 10px;
+}
+.movie_list{
+   
+   line-height: 24px;
+   display:flex;
+
+}
+
+.movie_img{
+    height:80px;
+    flex:1;
+    display:inline-block;
+}
+.movie_actor{
+    font-weight: 400;
+    flex:3;
+    display:inline-block;
+    margin-left:5px;
+
+}
+.name_list{
+    font-weight:600;
+    line-height: 30px;
+     display:inline-block;
+}
+.type{
+    border:1px solid lightseagreen;
+    border-radius:3px;
+    color:lightseagreen;
+    padding:0 5px;
+    margin-top:10px;
+    font-size:11px;
+
+}
+.ng{
+    line-height: 18px;
+     margin-bottom:5px;
+     color:orangered;
+     font-weight:400; 
+     display:inline-block;
+     position:absolute;
+     right:20px;
+}

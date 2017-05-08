@@ -1,0 +1,30 @@
+/* pages/movieDetail/movieDetail.wxss */
+.movie{
+   font-size:12px;
+  padding:10px;
+}
+
+.movie_list{
+   
+   line-height: 24px;
+   display:flex;
+
+}
+.movie_img{
+    height:80px;
+    flex:1;
+    display:inline-block;
+}
+.movie_detail{
+    font-weight: 400;
+    flex:3;
+    display:inline-block;
+    margin-left:5px;
+
+}
+.name_list{
+    
+    font-weight:600;
+    line-height: 40px;
+}
+.video_list{ font-size: 12px; }

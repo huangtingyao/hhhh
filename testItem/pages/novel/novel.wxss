@@ -1,0 +1,70 @@
+/* pages/novel/novel.wxss */
+#novel{
+    background-color: #f5f5f5;
+}
+.slide-image{
+    width:100%;
+}
+.title{
+    font-size:14px;
+    font-weight:600;
+    width:100%;
+    line-height: 34px;
+    background-color:#fefefe;
+    padding-left:10px;
+    margin-top:10px;
+}
+.novel{
+    display:flex;
+    font-size:12px;
+    background-color: white;
+    height:180px;
+}
+
+.novelList{
+    position:relative;
+    flex:0.25;
+    padding:10px;
+    
+    
+}
+.novelList_sell{
+    
+    display:flex;
+    font-size:12px;
+    background:white;
+    padding:10px;
+}
+.imglist{
+    
+    width:70px;
+    height:100px;   
+}
+.imglist_sell{
+    width:70px;
+    height:70px;
+}
+.detail{
+    margin-left:10px;
+    flex:0.7;
+}
+.text{
+    display:block;
+    line-height: 24px;
+}
+.name{
+    font-weight:600;
+}
+.type{
+    padding:3px;
+    text-align: center;
+    font-size:11px;
+    color:#f7a664;
+    border-radius:3px;
+    border:1px solid peachpuff;
+}
+.style{
+    position:absolute;
+    top:150px;
+    
+}

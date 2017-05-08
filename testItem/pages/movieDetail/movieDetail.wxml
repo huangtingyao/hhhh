@@ -1,0 +1,26 @@
+<!--pages/movieDetail/movieDetail.wxml-->
+    <view class="movie" >
+        {{datelist[4]}}上映
+        <view class="_movie" wx:for="{{imglist}}" wx:for-item="ImgItem" wx:for-index="idx" wx:key="{{idx}}">
+            
+            <view class="name_list" >
+            
+            
+    {{ImgItem.name}}
+            </view>
+            <view class="movie_list">
+            <image  src="{{ImgItem.url}}" class="movie_img" />
+            <view class="movie_detail">简介：{{ImgItem.detail}}</view>
+            </view>
+        </view>
+        
+    </view>
+
+    <view wx:for="{{array}}">
+  {{index}}: {{item.namelist}}
+  
+</view>
+
+    
+    
+   

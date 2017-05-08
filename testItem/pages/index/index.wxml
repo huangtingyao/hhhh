@@ -1,0 +1,45 @@
+<!--index.wxml-->
+<view class="container">
+  
+  <swiper class="swip" indicator-dots="{{true}}"
+    autoplay="{{true}}" circular="{{true}}" interval="5000" duration="1000" current="0">
+    <block wx:for="{{imgUrls}}" wx:key="{{i}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <navigator class="title" url="../movieDetail/movieDetail" open-type="navigate" hover-class="navigator-hover">电影推荐</navigator>
+  <scroll-view  class="scroll-view" scroll-y="true" style="height: {{scrollHeight}}px">
+    <view class="list" wx:for="{{movielist}}" wx:for-item="lstItem"   wx:for-index="i" wx:key="{{i}}">
+          <view class="name muc">{{lstItem.name}}</view>
+          <view class="singer muc">{{lstItem.year}}</view>
+      </view>
+    </scroll-view>
+    <navigator class="title foot" url="../video/video" open-type="navigate" hover-class="navigator-hover">相关视频</navigator>
+  <navigator class="title music" url="../audioDetail/audioDetail"  open-type="navigate" hover-class="navigator-hover">音乐推荐</navigator>
+  <scroll-view  class="scroll-view" scroll-y="true" style="height: {{scrollHeight}}px">
+    <view wx:if="{{condition}}">
+      <block wx:for="{{[1, 2, 3]}}">
+  
+      
+
+      </block>    
+
+      <view class="list" wx:for="{{list}}" wx:for-item="lstItem"   wx:for-index="i" wx:key="{{i}}">
+          <view class="name muc">{{lstItem.name}}</view>
+          <view class="singer muc">{{lstItem.singer}}</view>
+      </view> 
+    </view>
+ </scroll-view>
+ <navigator class="title novel" url="../movieDetail/movieDetail" open-type="navigate" hover-class="navigator-hover">小说推荐</navigator>
+  <scroll-view  class="scroll-view" scroll-y="true" style="height: {{scrollHeight}}px">
+    <view class="list" wx:for="{{novelList}}" wx:for-item="lstItem"   wx:for-index="i" wx:key="{{i}}">
+          <view class="name muc">{{lstItem.name}}</view>
+          <view class="singer muc">{{lstItem.author}}</view>
+          <view class="style muc">{{lstItem.style}}</view>
+      </view>
+    </scroll-view>
+  
+  
+</view>

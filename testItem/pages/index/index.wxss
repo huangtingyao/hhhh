@@ -1,0 +1,64 @@
+/**index.wxss**/
+.slide-image{
+  width:100%;
+}
+
+
+.usermotto {
+  margin-top: 150px;
+}
+.hoverClass{
+    background: red;
+    color:white;
+}
+.title{
+  width:100%;
+  text-align: center;
+  line-height: 2.255;
+  font-size:16px;
+  font-weight: 600;
+  background-color:aliceblue;
+}
+.foot{
+  margin-bottom: 20px;
+  color:#abb;
+}
+.music{
+  background-color:#f5f5f5;
+}
+.novel{
+  background-color: #f5f5f5;
+}
+.base{
+  margin:10px;
+  color:brown;
+}
+ul li{
+  display: block;
+  margin:30rpx 0;
+}
+.swip{
+  width:100%;
+}
+.list{
+  font-size: 12px;
+  line-height: 24px;
+  padding:5px 10px;
+}
+
+.muc{
+  display:inline-block;
+  margin-right:20px;
+}
+.name{
+  font-weight: 600;
+  
+}
+.singer{
+  color:#666;
+}
+.style{
+  color:cadetblue;
+  position:absolute;
+  right:10px;
+}

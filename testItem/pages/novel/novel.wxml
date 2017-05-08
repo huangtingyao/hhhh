@@ -1,0 +1,36 @@
+<!--pages/novel/novel.wxml-->
+<view id="novel">
+<swiper class="swip" indicator-dots="{{true}}"
+    autoplay="{{true}}" circular="{{true}}" interval="5000" duration="1000" current="0">
+    <block wx:for="{{imgUrl}}" wx:key="{{i}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="title">重磅推荐</view>
+  <view class="novel">
+    <view class="novelList" wx:for="{{novelList}}" wx:for-item="ImgItem" wx:for-index="idx" wx:key="{{idx}}">
+
+      <image class="imglist" src="{{ImgItem.url}}"/>
+      <view>{{ImgItem.name}}</view>
+      <view>
+        <text class="style type">{{ImgItem.style}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="title">精品畅销</view>
+
+ 
+    <view class="novelList_sell" wx:for="{{List}}" wx:for-item="ImgItem" wx:for-index="idx" wx:key="{{idx}}">
+
+      <image class="imglist_sell" src="{{ImgItem.url}}"/>
+      <view class="detail">
+        <text class="text name">{{ImgItem.name}}</text>
+        <text class="text">简介：{{ImgItem.detail}}</text>
+        <view class="text">
+          <text class="type">{{ImgItem.style}}</text>
+        </view>
+      </view>
+  </view>
+  </view>

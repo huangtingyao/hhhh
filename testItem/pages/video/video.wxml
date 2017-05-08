@@ -1,0 +1,32 @@
+<!--pages/video/video.wxml-->
+<view class="section tc">
+  <video src="{{src}}" class="video"  controls ></video>
+  <view class="btn-area">
+    <button bindtap="bindButtonTap">获取视频</button>
+    <input bindblur="bindInputBlur"/>
+    <button bindtap="bindSendDanmu">发送弹幕</button>
+  </view>
+ </view> 
+  <scroll-view  class="scroll-view" scroll-y="true" style="height: {{scrollHeight}}px">
+    <view class="list" wx:for="{{movieList}}" wx:for-item="movie"   wx:for-index="i" wx:key="{{i}}">
+         <view class="name_list " >
+            
+            
+    电影名： {{movie.name}}
+            </view>
+            <navigator class="ng">立即观看</navigator>
+            <view class="movie_list">
+            <image  src="{{movie.imgurl}}" class="movie_img" />
+            <view class="movie_actor">主演：{{movie.actor}}</view>
+            
+      </view>
+      <view>
+        <text class="type">{{movie.type}}</text>
+                
+            </view>
+      </view>
+    </scroll-view>
+
+
+  
+

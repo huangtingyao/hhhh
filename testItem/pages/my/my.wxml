@@ -1,0 +1,16 @@
+<!--pages/my/my.wxml-->
+
+<view class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover" />
+    <view class="userinfo-nickname">{{userInfo.nickName}}</view>
+    
+  </view>
+
+  <view class="mylist" wx:for="{{myList}}" wx:for-item="lstItem"   wx:for-index="i" wx:key="{{i}}">
+    <image class="my myicon" src=""/>
+    <view class="my myname">{{lstItem.name}}</view>
+    <view class="my myright">></view>
+  </view>
+  <view>
+  
+  </view>

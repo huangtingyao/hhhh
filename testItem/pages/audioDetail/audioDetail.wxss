@@ -1,0 +1,39 @@
+/* pages/audio/audio.wxss */
+.btn-list{
+    text-align: center;
+    display: flex;
+    padding:10px;
+    
+}
+.musicText{
+    padding:0 20px;
+    height:24px;
+    font-size:14px;
+    line-height: 24px;
+    color:#cabcb1;
+}
+.pro{
+    margin-left:20px;
+}
+.btn{ 
+    font-size:12px;
+    line-height:1.55555556;
+    display: inline-block;
+}
+.musicPoster{
+    
+    width:100px;
+    height:100px;
+}
+.list{
+    display: inline-block;
+}
+.musicPoster image{
+    width:100px;
+    height:100px;
+}
+.l-music{
+    font-size:14px;
+    line-height: 30px;
+    margin:0 10px;
+}

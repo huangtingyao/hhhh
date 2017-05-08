@@ -1,0 +1,46 @@
+<!--pages/movieDetail/movieDetail.wxml-->
+<import src="../../template/item.wxml"/>
+    <view class="movie" >
+        {{datelist[4]}}即将上映
+        <view class="_movie" wx:for="{{movieList}}"
+     wx:for-item="movie" 
+     wx:for-index="idx"    
+     wx:key="{{idx}}" >
+            
+            <view class="name_list" >
+            
+            
+    电影名： {{movie.name}}
+                <view class="grade info">{{movie.grade}}                </view>
+                <navigator class="title info" url="../video/video" open-type="navigate" hover-class="navigator-hover">看预告片</navigator>
+            </view>
+            <navigator class="ng">立即观看</navigator>
+            <view class="movie_list">
+            <image  src="{{movie.imgurl}}" class="movie_img" />
+            <view class="movie_detail">简介：{{movie.detail}}</view>
+            </view>
+        </view>
+        {{datelist[0]}}上映
+        <view class="_movie" 
+        wx:for="{{movieList}}"
+     wx:for-item="movie" 
+     wx:for-index="idx"    
+     wx:key="{{idx}}">
+            
+            <view class="name_list" >
+            
+            
+    电影名： {{movie.name}}
+            </view>
+            <view class="movie_list">
+            <image  src="{{movie.url}}" class="movie_img" />
+            <view class="movie_detail">简介：{{movie.detail}}</view>
+            </view>
+        </view>
+    </view>
+
+    
+
+    
+    
+   
